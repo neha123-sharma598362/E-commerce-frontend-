@@ -1,0 +1,58 @@
+.about-container {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 60px 20px;
+  background: #fff;
+  max-width: 1600px;
+  max-height: 1400px;
+}
+
+.about-hero {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  color: #e6004c;
+}
+
+.about-hero h1 span {
+  color: #222;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+.about-content {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.about-card {
+  background: #fff0f5;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+}
+
+.about-card h2 {
+  color: #e6004c;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.about-card p {
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.5;
+}

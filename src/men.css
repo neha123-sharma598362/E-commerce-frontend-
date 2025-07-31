@@ -1,0 +1,109 @@
+.men-page {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+/* Hero Banner */
+.men-hero {
+  background: url('/public/images/men back.jpg')
+    center/cover no-repeat;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.men-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+.men-hero-content {
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+.men-hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+.men-hero-content p {
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+
+/* Product Grid */
+.men-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+  padding: 70px 10%;
+  background: #fafafa;
+}
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  transition: transform 0.3s;
+}
+.product-card:hover {
+  transform: translateY(-6px);
+}
+.product-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+.product-card h2 {
+  font-size: 1.2rem;
+  margin: 15px 0 8px;
+}
+.product-card .price {
+  font-size: 1rem;
+  color: #e6004c;
+  margin-bottom: 15px;
+}
+.product-card button {
+  background-color: #e6004c;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.product-card button:hover {
+  background-color: #c2003f;
+}
+
+.success-message {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin: 10px auto;
+  width: fit-content;
+  border-radius: 6px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+  .men-hero-content h1 {
+    font-size: 2rem;
+  }
+  .men-hero-content p {
+    font-size: 1rem;
+  }
+}
+

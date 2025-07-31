@@ -1,0 +1,53 @@
+
+.custom-navbar{
+  position: fixed;
+}
+
+ .custom-navbar-links {
+  display: flex;
+  justify-content: flex-end; /* Right side mein le jaata hai */
+  width: 90%;
+  gap: 20px;
+}
+
+
+
+
+.custom-navbar-links .nav-link {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  padding: 8px 12px;
+  transition: all 0.3s ease;
+}
+
+.custom-navbar-links .nav-link:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.logo-text {
+  font-size: 28px;         
+  font-weight: bold;       
+  color: #000;             
+  text-transform: uppercase; 
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 1px;     
+}
+
+.logo-text:hover {
+  color: #007bff;          
+  text-decoration: none;
+}
+.nav-link .badge {
+  margin-left: 5px;
+}
+.cart-count {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 8px;
+  font-size: 14px;
+  margin-left: 4px;
+}

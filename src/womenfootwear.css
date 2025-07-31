@@ -1,0 +1,88 @@
+.footwear-page {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+/* Hero */
+.footwear-hero {
+  position: relative;
+  height: 55vh;
+  background: url('/public/images/women footwear.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(10, 52, 114, 0.459);
+}
+.hero-content {
+  position: relative;
+  text-align: center;
+  color:cadetblue;
+}
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.hero-content p {
+  font-size: 1.2rem;
+}
+
+/* Product Grid */
+.footwear-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+  padding: 60px 10%;
+  background: #fff0f5;
+}
+.footwear-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  transition: transform 0.3s;
+}
+.footwear-card:hover {
+  transform: translateY(-5px);
+}
+.footwear-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+.footwear-card h2 {
+  font-size: 1.2rem;
+  margin: 15px 0 8px;
+}
+.footwear-card .price {
+  font-size: 1rem;
+  color: #d63384;
+  margin-bottom: 15px;
+}
+.footwear-card button {
+  background-color: #d63384;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.footwear-card button:hover {
+  background-color: #b11f6b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+}

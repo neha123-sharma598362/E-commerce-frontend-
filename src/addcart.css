@@ -1,0 +1,34 @@
+/* cart.css */
+
+.cart-page {
+  padding: 30px;
+}
+
+.cart-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.cart-img {
+  width: 100px;
+  height: auto;
+}
+
+.item-info {
+  flex-grow: 1;
+}
+
+.cart-total {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.empty-cart {
+  color: gray;
+}

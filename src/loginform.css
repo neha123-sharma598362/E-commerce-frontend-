@@ -1,0 +1,102 @@
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
+  padding: 20px;
+}
+
+/* The white “card” */
+.login-box {
+  background: #fff;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  padding: 40px 30px;
+}
+
+/* Heading */
+.login-box h2 {
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #e6004c;
+}
+
+/* Inputs */
+.login-box input[type="email"],
+.login-box input[type="password"] {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color .2s;
+}
+
+.login-box input:focus {
+  outline: none;
+  border-color: #e6004c;
+}
+
+/* Remember me */
+.remember-me {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.remember-me input {
+  margin-right: 8px;
+}
+
+/* Button */
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #e6004c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color .3s;
+}
+
+.login-btn:hover {
+  background-color: #c2003f;
+}
+
+/* Links under form */
+.links {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 0.9rem;
+}
+
+.links a {
+  color: #e6004c;
+  text-decoration: none;
+  transition: color .2s;
+}
+
+.links a:hover {
+  color: #c2003f;
+  text-decoration: underline;
+}
+
+.success-msg {
+  color: green;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.error-msg {
+  color: red;
+  margin-top: 10px;
+  font-weight: bold;
+}

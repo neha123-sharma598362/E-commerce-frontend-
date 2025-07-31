@@ -1,0 +1,96 @@
+
+.bag-hero {
+  background: url('/public/images/bag bk.jpg') center/cover no-repeat;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.bag-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.bag-hero-content {
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+.bag-hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.bag-hero-content p {
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+
+/* Card Grid */
+.bag-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 50px auto 60px;
+  padding: 0 20px;
+}
+
+/* Card Styling */
+.bag-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bag-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.bag-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.bag-card h2 {
+  margin: 15px 0 5px;
+  font-size: 20px;
+  color: #222;
+}
+
+.bag-card p {
+  color: #f67c00;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.bag-card button {
+  padding: 10px 20px;
+  background-color: #f67c00;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 15px;
+  transition: background 0.3s ease;
+}
+
+.bag-card button:hover {
+  background-color: #d86600;
+}
